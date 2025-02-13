@@ -241,7 +241,9 @@ export default function Painter() {
             <label>A-канал {alpha}:</label>
             <input
               type="range"
-              min={2}
+              min={0}
+              max={255}
+              
               value={alpha}
               onChange={(e) => setAlpha(Number(e.target.value))}
             />
